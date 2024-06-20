@@ -4,7 +4,7 @@ import com.ar.cac.database.PeliculaDAO;
 import com.ar.cac.movies.Pelicula;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import javax.servlet.ServletException;
+import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -19,6 +19,10 @@ public class PeliculaServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+         // Configurar cabeceras CORS
+         resp.setHeader("Access-Control-Allow-Origin", "*"); // Permitir acceso desde cualquier origen
+         resp.setHeader("Access-Control-Allow-Methods", "*"); // Métodos permitidos
+         resp.setHeader("Access-Control-Allow-Headers", "Content-Type"); // Cabeceras permitidas
         // Establecer la codificación de caracteres
         req.setCharacterEncoding("UTF-8");
         resp.setCharacterEncoding("UTF-8");
@@ -44,6 +48,10 @@ public class PeliculaServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+          // Configurar cabeceras CORS
+          resp.setHeader("Access-Control-Allow-Origin", "*"); // Permitir acceso desde cualquier origen
+          resp.setHeader("Access-Control-Allow-Methods", "*"); // Métodos permitidos
+          resp.setHeader("Access-Control-Allow-Headers", "Content-Type"); // Cabeceras permitidas
         // Establecer la codificación de caracteres
         req.setCharacterEncoding("UTF-8");
         resp.setCharacterEncoding("UTF-8");
@@ -85,6 +93,10 @@ public class PeliculaServlet extends HttpServlet {
 
     @Override
     protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+          // Configurar cabeceras CORS
+          resp.setHeader("Access-Control-Allow-Origin", "*"); // Permitir acceso desde cualquier origen
+          resp.setHeader("Access-Control-Allow-Methods", "*"); // Métodos permitidos
+          resp.setHeader("Access-Control-Allow-Headers", "Content-Type"); // Cabeceras permitidas
         // Establecer la codificación de caracteres
         req.setCharacterEncoding("UTF-8");
         resp.setCharacterEncoding("UTF-8");
@@ -127,6 +139,10 @@ public class PeliculaServlet extends HttpServlet {
 
     @Override
     protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+          // Configurar cabeceras CORS
+          resp.setHeader("Access-Control-Allow-Origin", "*"); // Permitir acceso desde cualquier origen
+          resp.setHeader("Access-Control-Allow-Methods", "*"); // Métodos permitidos
+          resp.setHeader("Access-Control-Allow-Headers", "Content-Type"); // Cabeceras permitidas
         // Establecer la codificación de caracteres
         req.setCharacterEncoding("UTF-8");
         resp.setCharacterEncoding("UTF-8");
