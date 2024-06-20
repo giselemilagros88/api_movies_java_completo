@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 20-06-2024 a las 07:35:56
+-- Tiempo de generación: 20-06-2024 a las 11:44:31
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.0.28
 
@@ -40,9 +40,14 @@ CREATE TABLE `peliculas` (
 --
 
 INSERT INTO `peliculas` (`id_pelicula`, `titulo`, `duracion`, `genero`, `imagen`) VALUES
-(2, 'Transformers 2', '3h 2m', 'Acción', 'transformers.jpg'),
-(3, 'Mision Imposible', '3h 2m', 'Acción', 'mision_imposible.jpg'),
-(4, 'Transformers', '3h 2m', 'Acción', 'transformers.jpg');
+(2, 'The shawshank Redemption', '3h 2m', 'Suspenso/Crimen', 'aclamada_1.jpg'),
+(3, 'The Godfather', '3h 2m', 'Crimen', 'aclamada_2.jpg'),
+(4, 'The Godfather 2', '3h 2m', 'Crimen', 'aclamada_3.jpg'),
+(5, 'Schindler List', '3h 50m', 'Drama', 'aclamada_4.jpg'),
+(6, '12 angry man', '4h 50m', 'Drama', 'aclamada_5.jpg'),
+(7, 'Batman', '2h 50m', 'Fantasia', 'aclamada_7.jpg'),
+(8, 'Spirited away', '2h 5m', 'Fantasia/Aventura ', 'aclamada_6.jpg'),
+(9, 'The Lord of the Rings', '3h 55m', 'Aventura', 'aclamada_12.jpg');
 
 --
 -- Índices para tablas volcadas
@@ -62,7 +67,7 @@ ALTER TABLE `peliculas`
 -- AUTO_INCREMENT de la tabla `peliculas`
 --
 ALTER TABLE `peliculas`
-  MODIFY `id_pelicula` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_pelicula` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
